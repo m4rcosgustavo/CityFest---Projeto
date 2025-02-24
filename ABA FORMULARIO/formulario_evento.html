@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityFest - Cadastro de Eventos</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        #barrainicial {
+            background-color: rgba(3, 22, 57);
+            height: 80px;
+        }
+
+        #barrainicial ::placeholder {
+            color: #ffff;
+        }
+
+        #buscar {
+            margin-left: 3%;
+            margin-top: 15px;
+            color: #ffff;
+            height: 40px;
+        }
+
+        .search-box {
+            width: 15%;
+            padding: 5px 40px 5px 20px;
+            border: 2px solid #ccc;
+            border-radius: 25px;
+            font-size: 16px;
+            height: 30px;
+            background-color: transparent;
+            color: #ccc;
+        }
+
+        .home {
+            display: flex;
+            justify-content: space-around;
+            color: #ffff;
+            width: 20%;
+            margin-left: 75%;
+            font-family: 'poppins', sans-serif;
+            font-size: 15px;
+            margin-top: -60px;
+        }
+
+        .container {
+            background-color: #00133F;
+            padding: 40px;
+            border-radius: 50px;
+            max-width: 500px;
+            width: 100%;
+            align-items: center;
+            margin-left: 35%;
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .logo span {
+            color: #D4AF37;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 15px;
+            margin-top: 5px;
+            border-radius: 40px;
+            border: none;
+            font-size: 16px;
+            color: #808080;
+            box-sizing: border-box;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .carousel {
+            overflow-x: auto;
+            display: flex;
+            gap: 10px;
+            padding: 10px 0;
+            scrollbar-width: none;
+        }
+
+        .combo {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 12px;
+            min-width: 120px;
+            flex: 0 0 auto;
+        }
+
+        button {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .logo img {
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="barrainicial">
+        <input id="buscar" type="text" class="search-box" placeholder="buscar">
+        <div class="home">
+            <h4>home</h4>
+            <h4>sobre</h4>
+            <h4>contato</h4>
+            <h4>serviços</h4>
+        </div>
+    </div>
+
+    <div class="logo">
+        <img src="logo.png" alt="Logo CityFest">
+    </div>
+
+    <div class="container">
+        <h2>Formulário de Cadastro de Eventos:</h2>
+
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome completo">
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" placeholder="Digite seu telefone">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail">
+
+        <h3>Informações sobre o evento:</h3>
+
+        <div class="form-row">
+            <div>
+                <label for="estado">Estado:</label>
+                <select id="estado">
+                    <option>Estado</option>
+                    <option>Natal</option>
+                    <option>São Paulo</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Brasília</option>
+                    <option>Curitiba</optioj>
+                    <option>Minas Gerais</option>
+                    <option>Maceio</option>
+                    <option>Goiania</option>
+                    <option>Joao Pessoa</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="cidade">Cidade:</label>
+                <select id="cidade">
+                    <option>Estado</option>
+                    <option>Natal</option>
+                    <option>São Paulo</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Brasília</option>
+                    <option>Curitiba</optioj>
+                    <option>Minas Gerais</option>
+                    <option>Maceio</option>
+                    <option>Goiania</option>
+                    <option>Joao Pessoa</option>
+                </select>
+            </div>
+        </div>
+
+        <label for="tipo">Tipos de festa:</label>
+        <select id="tipo">
+            <option>Selecione</option>
+            <option>Aniversário</option>
+            <option>Casamentos</option>
+            <option>Festa</option>
+            <option>Formatura</option>
+            <option>Desfiles</option>
+            <option>Palestras</option>
+        </select>
+
+        <label for="data">Data do evento:</label>
+        <input type="date" id="data" placeholder="Ver datas disponíveis">
+
+        <label for="horario">Horário:</label>
+        <input type="time" id="horario" placeholder="Informe o horário">
+
+        <div class="carousel">
+            <div class="combo">Combo Aniversário<br><strong>$900,00</strong></div>
+            <div class="combo">Combo Casamentos<br><strong>$3.550,00</strong></div>
+            <div class="combo">Combo Festa<br><strong>$950,00</strong></div>
+            <div class="combo">Combo Formatura<br><strong>$2.000,00</strong></div>
+        </div>
+
+        <div class="link">Ver os Combos</div>
+
+        <button>Agendar</button>
+    </div>
+</body>
+
+</html>

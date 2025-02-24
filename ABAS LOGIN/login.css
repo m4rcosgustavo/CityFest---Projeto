@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+#barrainicial{
+    background-color: rgba(3, 22, 57);
+    height: 70px;
+}
+#barrainicial ::placeholder{
+    color:#ffff ;
+}
+#buscar{
+    margin-left: 3%;
+    margin-top: 15px;
+    color: #ffff;
+    height: 40px;
+}
+.search-box{
+    width: 15%;
+    padding: 5px 40px 5px 20px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    height: 30px;
+    background-color: transparent;
+    color: #ccc;
+}
+.home{
+    display: flex;
+    justify-content: space-around;
+    color: #ffff;
+    width: 20%;
+    margin-left: 75%;
+    font-family: 'poppins',sans-serif;
+    font-size: 15px;
+    margin-top: -25px;
+}
+.card-logo-login{
+    display: flex;
+    justify-content: space-around;
+    gap: 600px;
+    font-family: 'poppins' , sans-serif;
+}
+.logo{
+    width: 20px;
+    margin-top: 6%;
+}
+.card-login{
+    background-color:rgba(3, 22, 57);
+    width: 500px;
+    border-radius: 40px;
+    margin-top: 150px;
+    text-align: center;
+    color: #ffff;
+    height: 500px;
+}
+#text-login{
+    margin-top: 100px;
+}
+.card-login input{
+    border-radius: 50px;
+    padding: 15px 50px 10px;
+}
+.card-login h2{
+    text-align: center;
+    font-size: 40px;
+}
+.card-login button{
+    border-radius: 50px;
+    padding: 5px 10px 5px;
+}
+.card-login h4{
+    margin-left: -200px;
+}
+.card-login p {
+    line-height: 4;
+}
+.text-cadastrar{
+    margin-left: 72%;
+    text-align: center;
+    display: flex;
+    font-family: 'poppins' , sans-serif;
+    font-size: 12px;
+    line-height: 3;
+    margin-top: -40px;
+}
